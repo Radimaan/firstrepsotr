@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Ubuntu", sans-serif;
+
+
+}
+.continer{
+    width: 90%;
+    margin: auto;
+}
+header .head{
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    
+}
+.maind{
+    width: 50%;
+    height: 30rem;
+    background: #c8e2ea;
+}
+.image{
+    padding:  0  1rem 0 6.3rem;
+    width:     25%;
+}
+.image img{
+    width: 100%;
+}
+.tags {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 6rem ;
+
+}
+header .tags button {
+    border-radius: 5px;
+    border: 2px solid #6f6af8;
+    color:#6f6af8;
+    background-color: transparent;
+    padding: .8rem 2rem ;
+    transition: all .3s ease;
+    font-weight: bold;
+    cursor: pointer;
+}
+header .tags button:hover{
+    background: #6f6af8;
+    color: white;
+}
+.tags a{
+    position: relative;
+    display: inline-block;
+    color: #000;
+    text-decoration: none; 
+}
+.tags a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.5px;
+    background-color: #007bff;
+    transform: scalex(0);
+    transform-origin: left; 
+    transition: transform 0.3s ease;
+}
+.tags a:hover::after{
+    transform: scaleX(1);
+
+}
+.tags a:hover {
+    color: #007bff;
+}
+
+/* hero class */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+}
+
+.hero .textSection {
+    margin: 2rem 0;
+}
+
+.hero .textSection h1 {
+    font-size: 58px;
+    margin-bottom: .5rem;
+}
+span{
+    color:#007bff ;
+}
+.btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.btns button {
+    padding: .8rem 3rem;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-size: 14px;
+    text-transform: uppercase ;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btns .getStarted {
+    background: #6d58f7;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.btns .getStarted:hover {
+    background: #5041b4;
+}
+
+.btns .explore {
+    background-color: transparent;
+    color: #000;
+}
+
+.btns .explore:hover {
+    background: #6d58f7;
+    color: white;
+}
+
+.btns .getStarted i{
+    font-size: 1.3rem  ;
+    padding-left: 1rem;
+}
+
+
+.heroImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.heroImg img {
+    width: 45%;
+}
+.bersantage{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    align-items: center;
+    padding: 2rem 4rem ;
+}
+.bersantage .imm{
+    text-align: center;
+}
+.bersantage .imm i{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: #8f8d8d;
+}
+.bersantage .imm  h1{
+    font-size: 2.3rem;
+    padding-bottom: 1rem 0 0 0;
+    color: #007bff;
+}
+.bersantage .imm p{
+    font-size: .8rem;
+}
+.thride{
+    align-items: center;
+    text-align: center;
+    padding: 0 20rem ;
+}
+.thride .imageth img{
+    width: 100%;
+    padding-top: 2rem;
+}
+.thride .textth{
+    font-size: 20px;
+}
+
+.fou{
+    align-items: center ;
+    text-align: center;
+    padding-top: 2rem;
+}
+.imee{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    text-align: center;
+    align-items: center;
+    align-items: center ;
+    margin: 2rem ;
+    padding-left: 3.5rem;
+}
+.box{
+}
+.box .text-box{
+    height: 19rem;
+    text-align: center;
+    background: #6f6af8;
+    padding: 2rem  1rem 0 1rem;
+    margin: 2rem;
+    justify-content: space-between;
+    border-radius: 5px;
+    color: white;
+    transition: .3s ease-in-out;
+}
+.box .text-box:hover{
+    transform: translateY(-8px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.text-box h3{
+    padding-bottom: 1rem;
+}
+.text-box p{
+    color: #e9e1e1;
+}
+.box .text-box i{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: white;
+    color: #6f6af8;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 2rem;
+}
+.ani{
+    padding-bottom: .5rem;
+    position: relative;
+    display: inline-block;
+    color: #000;
+    text-decoration: none; 
+}
+.ani::before{
+    width: 20%;
+}
+.ani::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #007bff;
+    transform: scalex(.5);
+    transform-origin: left; 
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+.ani:hover::after{
+    transform: scaleX(1);
+
+}
+.fou p{
+    padding-top: 1rem;
+}
+/* five */
+.imageFive{
+    display: grid;
+    grid-template-columns: repeat(6, 6fr);
+    text-align: center;
+    align-items: center;
+    align-items: center ;
+    padding-top: 3rem;
+    position: relative;
+}
+.five{
+    width: 300%;
+}
+.imageFive img{
+    width: 55%;
+}
+.imageFive .imagefive1{
+    background-image: url('image/slnd.jpg');
+    background-size: 100%;
+    background-color: rgba(21, 21, 21, 0.8); /* Optional: add a background color */
+    transition: all 0.3s ease;
+    background-blend-mode:luminosity; 
+    border-radius: 50%;
+    width: 67%;
+    overflow: hidden;
+    height: 8rem;
+}
+.imageFive .imagefive2{
+    background-image: url('image/dhh.png');
+    background-size: 100%;
+    background-color: rgba(21, 21, 21, 0.8); /* Optional: add a background color */
+    transition: all 0.3s ease;
+    background-blend-mode:luminosity; 
+    border-radius: 50%;
+    width: 67%;
+    overflow: hidden;
+    height: 8rem;
+}
+.imageFive .imagefive3{
+    background-image: url('image/sacadadiin.jpg');
+    background-size: 100%;
+    background-color: rgba(21, 21, 21, 0.8); /* Optional: add a background color */
+    transition: all 0.3s ease;
+    background-blend-mode:luminosity; 
+    border-radius: 50%;
+    width: 66%;
+    overflow: hidden;
+    height: 8rem;
+}
+.imageFive .imagefive4{
+    background-image: url('image/shaafi.jpg');
+    background-size: cover;
+    background-color: rgba(21, 21, 21, 0.8); /* Optional: add a background color */
+    transition: all 0.3s ease;
+    background-blend-mode:luminosity; 
+    border-radius: 50%;
+    width: 63%;
+    overflow: hidden;
+    height: 8rem;
+}
+.imageFive .imagefive5{
+    background-image: url('image/shifa.jpg');
+    background-size: cover;
+    background-color: rgba(21, 21, 21, 0.8); /* Optional: add a background color */
+    transition: all 0.3s ease;
+    background-blend-mode:luminosity; 
+    border-radius: 50%;
+    width: 63%;
+    overflow: hidden;
+    height: 8rem;
+}
+.imageFive .imagefive6{
+    background-image: url('image/east-africa.jpg');
+    background-size: cover;
+    background-color: rgba(21, 21, 21, 0.8); /* Optional: add a background color */
+    transition: all 0.3s ease;
+    background-blend-mode:luminosity; 
+    border-radius: 50%;
+    width: 63%;
+    overflow: hidden;
+    height: 8rem;
+}
+.bb{
+    align-items: c;
+}
+.imageFive .bb:hover{
+    /* transform: scale(1.07); */
+    background-blend-mode: normal; 
+}
+/* six */
+.sexones{
+    padding: 1rem  0rem 1rem 5rem;
+    text-align: center;
+}
+.sixmaind{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.siximage img{
+    width: 100%;
+}
+.siximage{
+    padding-left: 15rem;
+}
+.sixtext{
+    margin-right: 20rem;
+    justify-content: space-between;
+}
+.sixtext h1{
+    padding-bottom: 1rem;
+    justify-content: space-between;
+}
+.sixtext p{
+    padding-bottom: .5rem;
+    justify-content: space-between;
+}
+.sixtext .r{
+    color: #6f6af8;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+.sixtext  button{
+    width: 33%;
+    height: 2.8rem;
+    background: #6f6af8;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+.sixtext  button:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+/* seven */
+.Seven{
+    padding: 3rem 0;
+}
+.Seven .sevenmaind {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.Seven .sixtext{
+    margin:    0 0 0 16.7rem ;
+    align-items: center;
+    justify-content: center;
+}
+.Seven .sevenmage{
+    margin-right: 15rem;
+}
+.sevenmage img{
+    width: 100%;
+}
+/* egth */
+.texteghthi{
+    display: flex;
+    padding: 2rem 0;
+    margin: 0;
+}
+.texteghthi img{
+    width: 100%;    
+}
+.texteghthi .siximage{
+    /* padding-left: 15rem; */
+    width: 50%;
+    padding-left: 14rem;
+}
+.texteghth{
+    margin: 0;
+    margin-right: 0rem;
+    padding: 0 20rem 0 0rem ;
+
+
+}
+/* nine */
+.ninediv{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    margin: auto 9rem;
+    padding: 3rem 0;
+}
+.nine2 img{
+    width: 101%;
+    
+}
+.nine2 .nineimage{
+    margin: 1rem;
+    border-radius: 10px;
+    border: 5px solid white;
+    overflow: hidden;
+}
+.nine2{
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    text-align: left;
+    border-radius: 5px;
+    border: 1.3px solid rgb(197, 193, 193);
+    transition: .3s ease;
+}
+.nine2:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.ninetext{
+    padding:2rem 0 0 2rem ;
+}
+.ninetext h3{
+    color: #6f6af8;
+    padding-bottom: 1rem;
+}
+.ninetext p{
+    padding-right: 3rem;
+    color: #8f8d8d;
+    padding-bottom:2rem ;
+}
+
+/* then */
+.dreem{
+    background: linear-gradient(to left,#187d94c7 ,#ae00ff );
+    align-items: center;
+}
+.thtext{
+text-align: center;
+padding:0 18rem;
+color: white;
+}
+.thtext h1{
+    padding-bottom: 1rem;
+    padding-top: 5rem;
+    
+}
+.thtext .buttonl{
+    padding: 3rem 0 4rem 0;
+
+}
+.buttonl button{
+    background: white;
+    color: #000;
+    width: 35%;
+    border: none;
+    border-radius: 5px;
+    height: 3.1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: .3 ease-in-out;
+}
+.buttonl button:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+}
+/* register */
+.register .register3{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin: 4rem 7rem 0 13rem;
+}
+.register img{
+    
+}
+.name input{
+    width: 80%;
+    height: 3rem;
+    margin: .5rem 0;
+    padding-left: 1rem;
+    border: 1px solid #6f6af8;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+label {
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%; /* Ballaca buuxa */
+    max-width: 380px; /* Ballaca ugu badnaan */
+    height: 10rem; /* Dhererka */
+    padding: 10px;
+    border: 1.5px solid #6f6af8; /* Midabka xariiqda caadiga ah */
+    border-radius: 5px; /* Geesaha wareegsan */
+    resize: none; /* Ka mamnuuc in la balaadhiyo */
+    transition: border-color 0.3s;
+}
+
+textarea:focus {
+    border-color: blue; /* Midabka xariiqda marka la taabanayo */
+}
+.register1 h4{
+    font-size: 1.5rem;
+}
+.register1 p{
+    padding: 2rem 0;
+    margin-right: 4%;
+}
+.register1 button{
+    width: 30%;
+    height: 2.8rem;
+    background: #6f6af8;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+.register1 button:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transform: translateY(-7px);
+}
+.sendbutton{
+    margin: 1rem 0;
+}
+.textcontac p{
+    padding-bottom: 1rem;
+}
+.contactse{
+    margin: 3rem ;
+}
+.contactse .imagecontac{
+    margin-bottom: 1rem;
+}
+.textcontac li{
+    display: flex;
+    text-align: center;
+    color: #5041b4;
+}
+
+.textcontac li a i{
+    margin: 1rem;
+    border-radius: 20rem;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    height: 3rem;
+    padding-top: .7rem;
+    font-size: 1.8rem;
+    color:black;
+    background: white;
+}
+.textcontac li a i:hover{
+    background: #6f6af8;
+    color: white;
+}
+/* footer */
+.footer {
+    background-color: #00142b;
+    background-image: url('imageproject/footer-bg.png');
+    background-size: cover;
+    color: white;
+    position: relative;
+    padding: 20px 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.iconefooter {
+    position: absolute; /* Si uu u overlapp u noqdo */
+    margin-left: 75rem; /* Fogaanta bidix */
+    margin-top: 0px; /* Fogaanta kore */
+    border-radius: 50%; /* Geesaha wareegsan */
+    padding: 1rem; /* Ku darista padding */
+    width: 4%; /* Ballaca */
+    transform: translatey(-50%); /* Si loo hagaajiyo meeshay joogto ah */
+    background: #00142b; /* Midabka asalka */
+    display: flex; /* Si loo sameeyo flexbox */
+    align-items: center; /* Ku dhejinta bartamaha dhanka toosan */
+    justify-content: center; /* Ku dhejinta bartamaha dhanka horizontal */
+    color: white; /* Midabka qoraalka */
+    z-index: 1; /* Kordhin si aan loogu dhicin */
+}
+.iconefooter i {
+    position: relative;
+    animation: moveUpDown 2s infinite;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.iconefooter a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+.footer-column .imagefooter img{
+    width: 50%;
+    margin-left: 2rem;
+}
+.footer-column{
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+}
+.imagefooter{
+    background: white;
+    width: 70%;
+    padding:  1rem 0;
+    margin:  2rem 0;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-column ul li a,
+.footer-column p{
+    color: #8f8d8d;
+}
+.copyright{
+    text-align: center;
+    background: #002147;
+    color: white;
+    height: 4rem;
+    font-size: 1rem;
+}
+.copyright p{
+    padding-top: 1.5rem;
+}
+
+
+
+
